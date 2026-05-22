@@ -26,7 +26,7 @@ namespace VsixGallery
 		{
 			if (package == null)
 			{
-				return RenderDefaultCard(siteName, "An alternative Visual Studio extension gallery", logoPath);
+				return RenderDefaultCard(siteName, "An alternative SQL Server Management Studio extension gallery", logoPath);
 			}
 
 			string title = package.Name ?? string.Empty;
@@ -40,8 +40,8 @@ namespace VsixGallery
 		public byte[] RenderDefaultCard(string? siteName, string? tagline, string? logoPath)
 		{
 			return Render(
-				siteName ?? "Open VSIX Gallery",
-				tagline ?? "An alternative Visual Studio extension gallery for nightly builds.",
+				siteName ?? "Open SSMS VSIX Gallery",
+				tagline ?? "An alternative SQL Server Management Studio extension gallery for nightly builds.",
 				null,
 				null,
 				logoPath,

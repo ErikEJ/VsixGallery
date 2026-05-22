@@ -6,8 +6,8 @@
         ? "Search extensions"
         : $"Search results for '{Model.Term}'";
     ViewData["Description"] = string.IsNullOrWhiteSpace(Model.Term)
-        ? "Search for Visual Studio extensions in this alternative VSIX gallery."
-        : $"Found {Model.Packages.Count()} Visual Studio extensions matching '{Model.Term}'.";
+        ? "Search for SQL Server Management Studio extensions in this alternative VSIX gallery."
+        : $"Found {Model.Packages.Count()} SQL Server Management Studio extensions matching '{Model.Term}'.";
 }
 
 @if (string.IsNullOrWhiteSpace(Model.Term))

@@ -253,6 +253,12 @@ namespace VsixGallery
 				targets.Add(new InstallationTarget(identifier, versionRange, architecture));
 			}
 
+			if (!targets.Any(t => t.Identifier.Equals("Microsoft.VisualStudio.Ssms", StringComparison.OrdinalIgnoreCase)))
+			{
+				var message = "Error: No installation target with identifier 'Microsoft.VisualStudio.Ssms' was found in the manifest. This extension is not compatible with SQL Server Management Studio.";
+				throw new Exception(message);
+			}
+
 			return targets;
 		}
 

@@ -46,7 +46,7 @@
             var origin = window.location.origin;
             var badgeUrl = origin + '/badge/' + encodeURIComponent(id) + '.svg';
             var pageUrl = origin + '/extension/' + encodeURIComponent(id) + '/';
-            var markdown = '[![Install from VSIX Gallery](' + badgeUrl + ')](' + pageUrl + ')';
+            var markdown = '[![Install from SSMS VSIX Gallery](' + badgeUrl + ')](' + pageUrl + ')';
 
             navigator.clipboard.writeText(markdown).then(function () {
                 var original = btn.textContent;

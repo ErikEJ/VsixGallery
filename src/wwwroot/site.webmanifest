@@ -1,6 +1,6 @@
 {
-    "name": "Open VSIX Gallery",
-    "short_name": "VSIX Gallery",
+    "name": "Open SSMS VSIX Gallery",
+    "short_name": "SSMS VSIX Gallery",
     "icons": [
         {
             "src": "/img/icon-192x192.png",

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.vsixgallery.com/sitemap.xml
+Sitemap: https://ssmsgallery.azurewebsites.net/sitemap.xml

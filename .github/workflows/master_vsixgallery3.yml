@@ -1,12 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - vsixgallery3
+name: Build and deploy ASP.Net Core app to Azure Web App - ssmsgallery
 
 on:
   push:
     branches:
-      - master
+      - ssmsgallery
   workflow_dispatch:
 
 jobs:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v3
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_77829130ADA14A26970D5F27791524F3 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_44B9B6511BAB4B96BBF695A676240B81 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4C6A518E4FDC4288990623736F262B51 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_11829130ADA14A26970D5F27791524F3 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_22B9B6511BAB4B96BBF695A676240B81 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_336A518E4FDC4288990623736F262B51 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'vsixgallery3'
+          app-name: 'ssmsgallery'
           slot-name: 'Production'
           package: .
           

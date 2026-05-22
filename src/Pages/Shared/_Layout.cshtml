@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>@ViewData["Title"]</title>
-    <meta name="description" content="@(ViewData["Description"] ?? "An alternative Visual Studio extension gallery for nightly builds.")" />
+    <meta name="description" content="@(ViewData["Description"] ?? "An alternative SQL Server Management Studio extension gallery for nightly builds.")" />
     @{
         string inlineCss = VsixGallery.CssHelper.GetMinified(_env, "css/site.css");
     }
@@ -29,7 +29,7 @@
         string socialTitle = !string.IsNullOrWhiteSpace(pageDescription)
             ? $"{pageTitle} – {pageDescription}"
             : pageTitle;
-        string socialDescription = pageDescription ?? "An alternative Visual Studio extension gallery for nightly builds.";
+        string socialDescription = pageDescription ?? "An alternative SQL Server Management Studio extension gallery for nightly builds.";
         string twitterCard = ViewData["TwitterCard"] as string ?? "summary_large_image";
         string socialImagePath = ViewData["Image"] as string ?? "/social/default.png";
         int socialImageWidth = ViewData["ImageWidth"] is int w ? w : VsixGallery.SocialCardRenderer.Width;
@@ -47,7 +47,7 @@
 
     <meta property="og:title" content="@socialTitle" />
     <meta property="og:description" content="@socialDescription" />
-    <meta property="og:site_name" content="@(ViewData["SiteName"] ?? "VSIX Gallery")" />
+    <meta property="og:site_name" content="@(ViewData["SiteName"] ?? "SSMS VSIX Gallery")" />
     <meta property="og:image:alt" content="@pageTitle" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}")" />
