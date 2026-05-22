@@ -146,7 +146,6 @@ RewriteOptions rewriteOptions = new RewriteOptions()
 
 if (!app.Environment.IsDevelopment())
 {
-	rewriteOptions.AddRedirectToWwwPermanent();
 	app.UseOutputCaching();
 }
 
