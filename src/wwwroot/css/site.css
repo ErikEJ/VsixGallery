@@ -469,6 +469,56 @@ img {
     box-shadow: var(--shadow-hover);
 }
 
+/* ========================================
+   Front-page promo banner
+   ======================================== */
+.promo-banner {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1.5em 0;
+    padding: 1.25em 1.5em;
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-md);
+    background: var(--primary-alpha);
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.promo-banner-icon {
+    font-size: 2em;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.promo-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.promo-banner-text strong {
+    font-size: 1.15em;
+    color: var(--primary);
+}
+
+.promo-banner-cta {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .promo-banner {
+        flex-wrap: wrap;
+    }
+
+    .promo-banner-cta {
+        margin-left: 0;
+    }
+}
+
 dt {
     font-weight: 600;
     color: var(--text-primary);
